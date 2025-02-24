@@ -7,7 +7,3 @@ services:
     volumes:
       - ./project:/project
     command: jupyter lab --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=''
-
-volumes:
-  materials:
-    name: "project"
