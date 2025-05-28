@@ -1,4 +1,4 @@
-# Docker + Jupyterlab + Pytorch Environment
+# Docker + Jupyterlab Environment
 
 ## How to run:
 1. Enter root directory and run command `docker compose up`
