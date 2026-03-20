@@ -2,8 +2,13 @@ services:
   jupyter:
     build:
       context: .
+      args:
+        USER_NAME: prom
+        USER_UID: 1000
     ports:
       - 8888:8888
     volumes:
-      - ./project:/project
+      - type: bind
+        source: ./jupyter
+        target: /home/prom/jupyter
     command: jupyter lab --ip=0.0.0.0 --no-browser --allow-root --NotebookApp.token=''
